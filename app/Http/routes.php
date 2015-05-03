@@ -14,7 +14,7 @@
 use Illuminate\Http\Request;
 
 $app->get('/', function() use ($app) {
-    return $app->welcome();
+    return redirect('/images');
 });
 
 $app->get('/image.download', function() use ($app){
